@@ -1,0 +1,282 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #915B4A;
+    min-height: 100vh;
+}
+
+.Header {
+    display: flex;
+    background-color: #F2F1E7;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.button {
+    float: left;
+    background-color: #F2F1E7;
+    display: flex;
+    height: 1em;
+    color: #5C4D4D;
+    text-align: center;
+    align-items: center;
+    padding: .5em;
+    font-size: xx-large;
+    position: relative;
+    cursor: pointer;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    height: .1em;
+    left: 0;
+    bottom: .5em;
+    width: 0;
+    background: #5C4D4D;
+    transition: width .5s;
+}
+
+.button:hover::after {
+    width: 100%;
+}
+
+.About-Box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-color: #5C4D4D;
+    color: #F2F1E7;
+    text-align: center;
+    align-items: center;
+}
+
+.About-Pic {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.Info {
+    color: #F2F1E7;
+    font-size: 1.5em;
+}
+
+.Featured-Box {
+    background-color: #915B4A;
+}
+
+.Featured-Title {
+    text-align: center;
+    color: #F2F1E7;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.Featured {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 5em;
+    justify-content: center;
+}
+
+.Product-Box {
+    background-color: #F2F1E7;
+    display: block;
+    color: #5C4D4D;
+    cursor: pointer;
+}
+
+.Product-Display {
+    display: block;
+    position: relative;
+    color: #F2F1E7;
+    justify-content: center;
+    text-align: center;
+}
+
+.Pricing {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.wrapper {
+    padding-top: .5em;
+}
+
+.Footer {
+    display: block;
+    background-color: #5C4D4D;
+    width: 100%;
+    height: 3em;
+    margin: auto;
+    bottom: 0;
+    position: realtive;
+}
+
+.Product-Pic {
+    opacity: 1;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.Middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.Product-Display:hover .Product-Pic {
+    opacity: 0.6;
+}
+
+.Product-Display:hover .Middle {
+    opacity: 1;
+}
+
+.Price {
+    background-color: #5C4D4D;
+    color: #F2F1E7;
+    font-size: 1.5em;
+    padding: 16px 32px;
+}
+
+.Product-Name {
+    background-color: #915B4A;
+    color: #F2F1E7;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.Shop-Header {
+    display: flex;
+    gap: .5em;
+    padding: .5em;
+    color: #F2F1E7;
+    font-size: 1.5em;
+}
+
+.Shop-Body {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 5em;
+    justify-content: center;
+}
+
+.Page-Numbers {
+    display: flex;
+    width: auto;
+    color: #F2F1E7;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+.Page-Number {
+    padding-left: .5em;
+}
+
+.text {
+    cursor: pointer;
+}
+
+
+.Product-Info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.Product-Page-Pic {
+    width: 50%;
+    height: auto;
+    justify-self: center;
+}
+
+.Product-Text {
+    color: #F2F1E7
+}
+
+.Details {
+    display: flex;
+    font-size: 1.3em;
+    gap: .5em;
+}
+
+.Back {
+    float: left;
+    color: #F2F1E7;
+    background-color: #5C4D4D;
+    height: 1em;
+    padding: .5em;
+    font-size: xx-large;
+    cursor: pointer;
+    position: relative;
+}
+
+.Back::after {
+    content: '';
+    position: absolute;
+    height: .1em;
+    left: 10%;
+    bottom: .4em;
+    width: 0;
+    background: #F2F1E7;
+    transition: width .5s;
+}
+
+.Back:hover::after {
+    width: 80%;
+}
+
+.Divider {
+    margin-top: 1em;
+    padding: .5em;
+    background-color: #5C4D4D;
+}
+
+.Cart-Items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Break {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .1em;
+    background-color: #F2F1E7;
+}
+
+.Item {
+    display: flex;
+    width: 100%;
+    font-size: xx-large;
+    color: #F2F1E7;
+    justify-content: space-between;
+}
+
+.Total {
+    color: #F2F1E7;
+    font-size: 1.5em;
+    justify-self: right;
+}
